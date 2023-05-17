@@ -1,0 +1,63 @@
+.font {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-style:oblique;
+    font-size: 3.5em;
+    color:rgb(8, 49, 8);
+    text-shadow: 0 0 3px rgb(255, 255, 255);
+}
+
+.container-glass{
+    width: 550px;
+    height: 280px;
+    margin: 200px auto;
+    background: linear-gradient(135deg, rgba(248, 248, 248, 0.3), rgba(255,255,255,0));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.elements {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-style: oblique;
+    font-weight: bold;
+    color:rgb(8, 49, 8);
+    margin:8px;
+    background-color:rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255,0));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 20px;
+    border: 3px solid rgba(73, 25, 25, 0.527);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.body {
+    margin-left: 25px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.graphs {
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.p {
+    width: 200px;
+    color:rgb(255, 255, 255);
+    font-size:1.3em;
+    font-weight: bold;
+    font-style: oblique;
+    background: linear-gradient(135deg, rgba(248, 248, 248, 0.4), rgba(255,255,255,0.2));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}

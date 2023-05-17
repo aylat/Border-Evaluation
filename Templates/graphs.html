@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Graphs for {{crossing}} on {{datePicked}}</title>
+        <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+        <style>
+            body {
+              background-image:url("{{ url_for('static', filename='images/someImage.jpg')}}");
+              background-repeat: no-repeat;
+              background-size:cover;
+            }
+        </style>
+    </head>
+    <center>
+    {% block content %}
+    <body class="body">
+        <p class="p">{{ crossing }}</p>
+        <p class="p">{{ datePicked }}</p>
+        <div id='SegGroup' class="graphs"></div>
+        <br>
+        <div id='Segments' class="graphs"></div> 
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script>
+            var graph1 = {{graph1JSON | safe}};
+            Plotly.plot('SegGroup',graph1,{});
+
+            var graph2 = {{graph2JSON | safe}};
+            Plotly.plot('Segments',graph2,{});
+        </script>
+    {% endblock %}
+    </center>
+    </body>
+</html>
